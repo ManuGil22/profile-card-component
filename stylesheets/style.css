@@ -1,8 +1,7 @@
 body {
     background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
     background-repeat: no-repeat;
-    background-position-y: -22.5rem, +31.5rem;
-    background-position-x: -2.9rem, +58rem;
+    background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(40vw + 25%) top calc(72vh - 15vw);
     background-color: hsl(185, 75%, 39%);
     height: 100vh;
     margin: 0;
@@ -25,14 +24,17 @@ main {
     box-shadow: 0 20px 50px 15px hsla(229, 23%, 23%, 0.25);
 }
 
+.card-description {
+    position: relative;
+    top: -48px;
+}
+
 .header-image img {
     border-radius: 15px 15px 0 0;
 }
 
 .image-container {
     max-width: fit-content;
-    position: absolute;
-    top: 39.7%;
     margin-left: 7.6rem;
     border-radius: 50%;
     background-color: white;
@@ -50,7 +52,6 @@ main {
 }
 
 .user-name {
-    margin: 4.3rem 0 0.3rem 0;
     font-size: 18px;
     color: hsl(229, 23%, 23%);
 }
